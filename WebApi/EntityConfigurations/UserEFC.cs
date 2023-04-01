@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using WebApi.Models;
+using WebApi.Entities;
 
 namespace WebApi.EntityConfigurations
 {
@@ -10,7 +10,7 @@ namespace WebApi.EntityConfigurations
         public void Configure(EntityTypeBuilder<User> builder)
         {
             builder.HasKey(c => c.Id);
-            builder.ToTable("User", "MinimalistBoilerPlate");
+            builder.ToTable("User", "OpenAiPractice");
             builder.HasData
                 (
                 new User { Id = 1,  AdSoyad = " Mustafa Kupik" , Adres ="Minimalist Boiler Plate by null. tech", EPosta = "null@tech.com",  Sifre = "123456", Yas = "1"}

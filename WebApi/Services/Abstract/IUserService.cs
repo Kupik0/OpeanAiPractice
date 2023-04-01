@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 using WebApi.Dto;
-using WebApi.Models;
+using WebApi.Entities;
 
 namespace WebApi.Services.Abstract
 {

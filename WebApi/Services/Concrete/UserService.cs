@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using WebApi.Dto;
-using WebApi.Models;
+using WebApi.Entities;
 using WebApi.Services.Abstract;
 
 namespace WebApi.Services.Concrete
@@ -10,9 +10,9 @@ namespace WebApi.Services.Concrete
     {
         protected DbSet<User> user => dbContext.Set<User>();
 
-        private readonly MinimalistBoilerPlateDbContext dbContext;
+        private readonly OpenAiPracticeDbContext dbContext;
         private readonly IMapper mapper;
-        public UserService(MinimalistBoilerPlateDbContext dbContext , IMapper mapper)
+        public UserService(OpenAiPracticeDbContext dbContext , IMapper mapper)
         {
             this.dbContext = dbContext;
             this.mapper = mapper;

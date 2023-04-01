@@ -13,11 +13,11 @@ namespace WebApi.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.EnsureSchema(
-                name: "MinimalistBoilerPlate");
+                name: "OpenAiPractice");
 
             migrationBuilder.CreateTable(
                 name: "User",
-                schema: "MinimalistBoilerPlate",
+                schema: "OpenAiPractice",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
@@ -35,7 +35,7 @@ namespace WebApi.Migrations
                 });
 
             migrationBuilder.InsertData(
-                schema: "MinimalistBoilerPlate",
+                schema: "OpenAiPractice",
                 table: "User",
                 columns: new[] { "Id", "AdSoyad", "Adres", "CreateDate", "EPosta", "Sifre", "Yas" },
                 values: new object[] { 1, " Selda Bağcan", "Konak mah. 312. Cd. 123. sk İzmir Türkiye", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "vurucusesselda@yahoo.com", "123456", "64" });
@@ -46,7 +46,7 @@ namespace WebApi.Migrations
         {
             migrationBuilder.DropTable(
                 name: "User",
-                schema: "MinimalistBoilerPlate");
+                schema: "OpenAiPractice");
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using WebApi.Models;
+using WebApi.Entities;
 using WebApi.Services.Abstract;
 
 namespace WebApi.Controllers
@@ -32,5 +32,6 @@ namespace WebApi.Controllers
 
             return Ok(res);
         }
+ 
     }
 }

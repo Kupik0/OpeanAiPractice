@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using WebApi.Dto;
-using WebApi.Models;
+using WebApi.Entities;
 
 namespace WebApi.Mapping
 {

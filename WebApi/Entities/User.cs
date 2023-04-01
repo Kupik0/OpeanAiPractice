@@ -4,8 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WebApi.Entitites;
 
-namespace WebApi.Models
+namespace WebApi.Entities
 {
     public class User : BaseEntity
     {

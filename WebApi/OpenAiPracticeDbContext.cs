@@ -1,4 +1,4 @@
-﻿using WebApi.Models;
+﻿using WebApi.Entities;
 
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace WebApi;
 
-    public class MinimalistBoilerPlateDbContext : DbContext
+    public class OpenAiPracticeDbContext : DbContext
     { 
-        public MinimalistBoilerPlateDbContext(DbContextOptions<MinimalistBoilerPlateDbContext> options) : base(options)
+        public OpenAiPracticeDbContext(DbContextOptions<OpenAiPracticeDbContext> options) : base(options)
         {
         AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
     }

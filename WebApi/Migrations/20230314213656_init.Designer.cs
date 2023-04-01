@@ -11,7 +11,7 @@ using WebApi;
 
 namespace WebApi.Migrations
 {
-    [DbContext(typeof(MinimalistBoilerPlateDbContext))]
+    [DbContext(typeof(OpenAiPracticeDbContext))]
     [Migration("20230314213656_init")]
     partial class init
     {
@@ -58,7 +58,7 @@ namespace WebApi.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("User", "MinimalistBoilerPlate");
+                    b.ToTable("User", "OpenAiPractice");
 
                     b.HasData(
                         new

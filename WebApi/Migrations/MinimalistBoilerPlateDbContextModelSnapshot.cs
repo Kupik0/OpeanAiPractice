@@ -10,8 +10,8 @@ using WebApi;
 
 namespace WebApi.Migrations
 {
-    [DbContext(typeof(MinimalistBoilerPlateDbContext))]
-    partial class MinimalistBoilerPlateDbContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(OpenAiPracticeDbContext))]
+    partial class OpenAiPracticeDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
@@ -55,7 +55,7 @@ namespace WebApi.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("User", "MinimalistBoilerPlate");
+                    b.ToTable("User", "OpenAiPractice");
 
                     b.HasData(
                         new
